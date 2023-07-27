@@ -336,6 +336,19 @@ body {
 	font-size: var(--label-2);
 }
 
+.fade-in {
+	animation: fade-in 200ms forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /********** HEADER *********/
 
 .header .btn-primary .span {
@@ -1072,6 +1085,10 @@ article.container::before {
 	.slider-list {
 		gap: 16px;
 	}
+
+	.heading {
+		font-size: 5.8rem;
+	}
 }
 
 /**
@@ -1081,5 +1098,9 @@ article.container::before {
 @media screen and (min-width: 1400px) {
 	.highlight-list {
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.heading {
+		font-size: 5.8rem;
 	}
 }
